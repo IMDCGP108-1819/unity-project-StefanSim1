@@ -62,7 +62,7 @@ GameObject:
   - component: {fileID: 2525097822974472271}
   m_Layer: 9
   m_Name: Asteroid
-  m_TagString: Untagged
+  m_TagString: Asteroid
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -158,7 +158,7 @@ CircleCollider2D:
   m_GameObject: {fileID: 2525097822974472270}
   m_Enabled: 1
   m_Density: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: 22f8dbaf402a64046b6fc0475ea8320f, type: 2}
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0

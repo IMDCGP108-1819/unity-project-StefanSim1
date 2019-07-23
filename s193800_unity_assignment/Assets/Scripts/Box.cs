@@ -4,9 +4,14 @@ using UnityEngine;
 
 public class Box : MonoBehaviour
 {
-    private void OnTriggerEnter2D(Collider2D collision)
+    private void OnTriggerEnter2D(Collider2D other)
     {
-        Destroy(collision.gameObject);
+        if (other.tag =="Laser")
+        {
+            Destroy(GameObject.FindWithTag("Laser"));
+        }
     }
+
+    
 }
 
