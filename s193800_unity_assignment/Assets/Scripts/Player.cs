@@ -49,6 +49,7 @@ public class Player : MonoBehaviour
         damageDealer.Hit();
         if (health <= 0)
         {
+            FindObjectOfType<Level>().LoadGameOver();
             Destroy(gameObject);
             GameObject explosion = Instantiate(VFX, transform.position, transform.rotation);
             Destroy(explosion, explosionDuration);
