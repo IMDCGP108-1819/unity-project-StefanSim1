@@ -10,6 +10,8 @@ public class Asteroid : MonoBehaviour
     public Rigidbody2D rb;
     [SerializeField] GameObject VFX;
     [SerializeField] float explosionDuration;
+    [SerializeField] AudioClip SFX;
+    [SerializeField] [Range(0,1)] float VFXVolume = 0.5f;
     void Start()
     {
         Vector2 thrust = new Vector2(Random.Range(-maxThrust, maxThrust), Random.Range(-maxThrust, maxThrust));
@@ -38,7 +40,8 @@ public class Asteroid : MonoBehaviour
     {
         Destroy(gameObject);
         GameObject explosion = Instantiate(VFX, transform.position, transform.rotation);
-        Destroy(explosion, explosionDuration); 
+        Destroy(explosion, explosionDuration);
+        AudioSource.PlayClipAtPoint(SFX, Camera.main.transform.position, VFXVolume);
     }
 }
     

@@ -446,6 +446,17 @@ PrefabInstance:
       propertyPath: m_SortingOrder
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 5587721441126639333, guid: 6455f296940c16746b94143d5562a0d3,
+        type: 3}
+      propertyPath: explosionDuration
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5587721441126639333, guid: 6455f296940c16746b94143d5562a0d3,
+        type: 3}
+      propertyPath: VFX
+      value: 
+      objectReference: {fileID: 3665322112647280849, guid: 58a33a1cbd19904488cf2f2fab2b119a,
+        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6455f296940c16746b94143d5562a0d3, type: 3}
 --- !u!1001 &661134533
@@ -775,8 +786,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1988461293}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.005, y: 0.014, z: -848.37946}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0.005004883, y: 0.014022827, z: 0}
   m_LocalScale: {x: 17.791681, y: 9.992096, z: 1.488}
   m_Children: []
   m_Father: {fileID: 0}

@@ -181,6 +181,10 @@ MonoBehaviour:
   maxThrust: 100
   maxTorque: 100
   rb: {fileID: 2525097822974472242}
+  VFX: {fileID: 0}
+  explosionDuration: 0
+  SFX: {fileID: 8300000, guid: 5c3af63d8a6976c4b8e74d6cf1943646, type: 3}
+  VFXVolume: 0.5
 --- !u!114 &2525097822974472271
 MonoBehaviour:
   m_ObjectHideFlags: 0
