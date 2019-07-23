@@ -8,7 +8,8 @@ public class Asteroid : MonoBehaviour
     public float maxThrust;
     public float maxTorque;
     public Rigidbody2D rb;
-   
+    [SerializeField] GameObject VFX;
+    [SerializeField] float explosionDuration;
     void Start()
     {
         Vector2 thrust = new Vector2(Random.Range(-maxThrust, maxThrust), Random.Range(-maxThrust, maxThrust));
@@ -29,8 +30,15 @@ public class Asteroid : MonoBehaviour
         health -= damageDealer.GetDamage();
         if (health <= 0)
         {
-            Destroy(gameObject);
+            Die();
         }
+    }
+
+    private void Die()
+    {
+        Destroy(gameObject);
+        GameObject explosion = Instantiate(VFX, transform.position, transform.rotation);
+        Destroy(explosion, explosionDuration); 
     }
 }
     
