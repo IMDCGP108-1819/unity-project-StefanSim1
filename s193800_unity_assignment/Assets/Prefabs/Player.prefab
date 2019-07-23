@@ -100,8 +100,8 @@ MonoBehaviour:
     type: 3}
   projectileSpeed: 10
   projectileFiringPeriod: 0.1
-  VFX: {fileID: 0}
-  explosionDuration: 0
+  VFX: {fileID: 3665322112647280849, guid: 58a33a1cbd19904488cf2f2fab2b119a, type: 3}
+  explosionDuration: 1
   SFX: {fileID: 8300000, guid: 5c3af63d8a6976c4b8e74d6cf1943646, type: 3}
   VFXVolume: 0.5
   shootSound: {fileID: 8300000, guid: 2b6759b88c4114d44825f3ff0a21b5bf, type: 3}
