@@ -12,8 +12,13 @@ public class Asteroid : MonoBehaviour
     [SerializeField] float explosionDuration;
     [SerializeField] AudioClip SFX;
     [SerializeField] [Range(0,1)] float VFXVolume = 0.5f;
+
+    Level level;
     void Start()
     {
+        level = FindObjectOfType<Level>();
+        level.CountAsteroids(); 
+
         Vector2 thrust = new Vector2(Random.Range(-maxThrust, maxThrust), Random.Range(-maxThrust, maxThrust));
         float torque = Random.Range(-maxTorque, maxTorque);
 
@@ -25,6 +30,7 @@ public class Asteroid : MonoBehaviour
     {
         DamageDealer damageDealer = other.gameObject.GetComponent<DamageDealer>();
         HitProcess(damageDealer);
+        
     }
 
     private void HitProcess(DamageDealer damageDealer)
@@ -33,6 +39,7 @@ public class Asteroid : MonoBehaviour
         if (health <= 0)
         {
             Die();
+            level.AsteroidsDestroyed();
         }
     }
 
