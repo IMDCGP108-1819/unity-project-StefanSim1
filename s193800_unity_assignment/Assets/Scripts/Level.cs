@@ -35,7 +35,7 @@ public class Level : MonoBehaviour
         Asteroids--;
         if(Asteroids <=0)
         {
-            LoadNextScene();    
+            LoadNextScene();
         }
     }
 
