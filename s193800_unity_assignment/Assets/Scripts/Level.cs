@@ -35,7 +35,7 @@ public class Level : MonoBehaviour
         Asteroids--;
         if(Asteroids <=0)
         {
-            LoadNextScene();
+            
         }
     }
 
@@ -47,7 +47,7 @@ public class Level : MonoBehaviour
     IEnumerator WaitAndLoad()
     {
         yield return new WaitForSeconds(delayInSeconds);
-        SceneManager.LoadScene("Game Over");
+        SceneManager.LoadNextScene();
     }
     public void QuitGame()
     {
